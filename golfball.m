@@ -1,4 +1,5 @@
 function results = golfball(t, conds)
+  % golf ball physics simulation, called from ode45
   pos  = conds(1:3); % North, East, Down coords
   vel  = conds(4:6);
   m    = conds(7); % kg

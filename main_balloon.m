@@ -1,3 +1,5 @@
+% Jacob Killelea - ASEN 3128 - Assigment 1
+% balloon simulation
 clear all; clc;
 
 V    = 1;    % m^3
@@ -34,8 +36,8 @@ for windspeed = 1:20 % m/s, crosswind
 
     p = polyfit(north, up, 1);
     volumes(windspeed) = V;
-    %fprintf('wind %d, vol %f, slope %f\n', windspeed, V, p(1))
-		fprintf('.');
+    % fprintf('wind %d, vol %f, slope %f\n', windspeed, V, p(1))
+		% fprintf('.');
 
     V = 1.1*V;
   end
